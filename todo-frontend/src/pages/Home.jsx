@@ -1,5 +1,5 @@
-import AddTodoForm from "../components/AddTodoForm";
-import TodoList from "../components/TodoList";
+import AddToDoForm from "../components/AddToDoForm.jsx";
+import ToDoList from "../components/ToDoList.jsx";
 
 function Home({
   todos,
@@ -13,7 +13,7 @@ function Home({
     <section>
       <h2>Home</h2>
 
-      <AddTodoForm onAdd={onAdd} />
+      <AddToDoForm onAdd={onAdd} />
 
       <div className="filters">
         <button
@@ -43,7 +43,7 @@ function Home({
         </button>
       </div>
 
-      <TodoList
+      <ToDoList
         todos={todos}
         onToggle={onToggle}
         onDelete={onDelete}
